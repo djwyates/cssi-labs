@@ -11,7 +11,7 @@ const findMessage = (messages) => {
     for(message in messages) {
         const messageData = messages[message];
         if(messageData.passcode === passcodeAttempt) {
-            renderMessageAsHtml(messageData.message)
+            renderMessageAsHtml(messageData.message);
         }
     }
 }
