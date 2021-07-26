@@ -5,7 +5,13 @@ const passcodeInput = document.querySelector("#passcode"),
       submitMessageForm = document.querySelector("#submitMsgButton");
 
 const submitMessage = () => {
-    console.log("in submitMessage function");
+    if (messageInput.value.length > 150) {
+        alert("This message is too long (max. 150 characters)");
+        return;
+    }
+    for (let i=0; i<passcodeInput.value.length; i++) {
+        console.log(passcodeInput.value.substring);
+    }
     firebase.database().ref().push({
         message: messageInput.value,
         passcode: passcodeInput.value
