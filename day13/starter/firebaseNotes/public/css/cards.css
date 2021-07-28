@@ -11,6 +11,7 @@ input::placeholder {
   overflow: hidden;
   background: yellow;
   /* color: var(--bg); */
+  min-width: 200px;
 }
 
 .card.large {
